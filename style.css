@@ -1,0 +1,43 @@
+h1 {
+    padding: 30px;
+    font-size: 200%;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+li {
+	padding: .5em;
+	margin: 0;
+    border: 1px solid #ccc;
+    transition: 0.1s all;
+}
+
+li:hover {
+    background-image: url("background.jpg");
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.tarefas-lista {
+    font-size: 20px;
+    margin: 0 0 0 30px;
+}
+
+.local-adicionartarefa {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15%;
+    width: 50%;
+}
+
+.imagem-cafe {
+    max-width: 300px;
+    max-height: 250px;
+    margin: 0 0 50px 0;
+}
