@@ -16,6 +16,8 @@ li:hover {
     background-image: url("background.jpg");
     font-weight: bold;
     color: #FFFFFF;
+    font-size: 150%;
+    ;
 }
 
 .tarefas-lista {
