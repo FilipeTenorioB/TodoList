@@ -5,7 +5,21 @@ h1 {
     font-weight: bold;
 }
 
-li {
+#bto-adicionartarefa {
+    padding: 8px;
+    margin: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: black;
+}
+
+#bto-adicionartarefa:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.tarefas-lista {
 	padding: .5em;
 	margin: 0;
     border: 1px solid #ccc;
@@ -16,16 +30,16 @@ li:hover {
     background-image: url("background.jpg");
     font-weight: bold;
     color: #FFFFFF;
-    font-size: 150%;
+    font-size: 120%;
     ;
 }
 
-.tarefas-lista {
+#lista-tarefas {
     font-size: 20px;
     margin: 0 0 0 30px;
 }
 
-.local-adicionartarefa {
+#local-adicionartarefa {
     margin-bottom: 15px;
     margin-left: 15px;
     padding: 10px;
@@ -42,4 +56,9 @@ ul {
     max-width: 300px;
     max-height: 250px;
     margin: 0 0 50px 0;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
 }
