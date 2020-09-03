@@ -17,6 +17,7 @@ function montaLi(tarefa, classe){
     var li = document.createElement("li");
     li.textContent = tarefa;
     li.classList.add(classe);
+    li.innerHTML = '<input type="checkbox"><button class="bto-removertarefa">x</button>'; 
     return li;
 }
 
@@ -24,14 +25,6 @@ function adicionaTarefaNaLista(tarefa){
     var lista = document.querySelector("#lista-tarefas");
     lista.appendChild(montaLi(tarefa, "tarefas-lista"));
 }
-
-function criarCheckbox() {
-    var check = document.createElement("INPUT");
-    check.setAttribute("type", "checkbox");
-    document.body.appendChild(check);
-  }
-
-  /* onclick="criarCheckbox()" no button no HTML  */
 
 /* Remover tarefas */
 
@@ -41,6 +34,17 @@ tarefa.addEventListener("dblclick", function(event){
     setTimeout(function(){
         event.target.parentNode.remove();
     }, 500);
+});
+
+var tarefa = document.querySelector("li");
+var button = document.querySelector("button");
+tarefa.addEventListener("mousedown", function() {
+  console.log("Handler for paragraph.");
+});
+button.addEventListener("mousedown", function(event) {
+  console.log("Handler for button.");
+  if (event.which == 3)
+    event.stopPropagation();
 });
 
 /* Editar tarefas */

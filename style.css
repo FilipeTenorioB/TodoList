@@ -5,9 +5,15 @@ h1 {
     font-weight: bold;
 }
 
+#local-adicionartarefa {
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 10px;
+}
+
 #bto-adicionartarefa {
     padding: 8px;
-    margin: 5px;
     font-size: 13px;
     font-weight: bold;
     color: #FFFFFF;
@@ -19,37 +25,47 @@ h1 {
     color: black;
 }
 
+.bto-removertarefa {
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: black;
+}
+
+.bto-removertarefa:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
+
 .tarefas-lista {
-	padding: .5em;
-	margin: 0;
+	padding: 8px;
     border: 1px solid #ccc;
     transition: 0.1s all;
+    text-align: right;
+}
+
+.tarefas-lista p {
+    text-align: left;
 }
 
 li:hover {
     background-image: url("background.jpg");
-    font-weight: bold;
     color: #FFFFFF;
-    font-size: 120%;
     ;
 }
 
 #lista-tarefas {
     font-size: 20px;
-    margin: 0 0 0 30px;
+    margin-left: 15px;
 }
 
-#local-adicionartarefa {
-    margin-bottom: 15px;
-    margin-left: 15px;
-    padding: 10px;
-}
 
 ul {
     display: inline-block;
     vertical-align: top;
     margin-right: 15%;
-    width: 50%;
+    width: 40%;
 }
 
 .imagem-cafe {
